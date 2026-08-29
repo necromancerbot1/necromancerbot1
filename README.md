@@ -1,6 +1,3 @@
-<h1 align="center" style="display: none;">necromancerbot1 - Profil Premium</h1>
-
-<br />
 
 <div align="center" style="padding: 20px; background-color: #010102; border: 2px solid #58A6FF; border-radius: 15px; box-shadow: 0 0 15px rgba(88, 166, 255, 0.6); filter: drop-shadow(0 0 5px rgba(88, 166, 255, 0.4));">
   <h1 style="color: #F8D588; font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 3rem; text-shadow: 0 0 15px rgba(248, 213, 136, 0.8);">Hi, saya Farel 👋</h1>
