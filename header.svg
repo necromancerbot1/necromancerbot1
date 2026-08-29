@@ -33,7 +33,7 @@
   <path d="M 775 190 L 775 225 L 740 225" fill="none" stroke="#58A6FF" stroke-width="3" filter="url(#neon-blue)" />
 
   <!-- Nama Utama Menyala -->
-  <text x="50%" y="45%" text-anchor="middle" font-family="Arial, sans-serif" font-size="46" font-weight="bold" fill="#FFFFFF" filter="url(#neon-blue)" letter-spacing="4">HELLI, I'AM FAREL</text>
+  <text x="50%" y="45%" text-anchor="middle" font-family="Arial, sans-serif" font-size="46" font-weight="bold" fill="#FFFFFF" filter="url(#neon-blue)" letter-spacing="4">HELLO, I'AM FAREL</text>
   <text x="50%" y="45%" text-anchor="middle" font-family="Arial, sans-serif" font-size="46" font-weight="bold" fill="#FFFFFF" letter-spacing="4">HELLO, I'AM FAREL</text>
 
   <!-- Teks Subtitle -->
