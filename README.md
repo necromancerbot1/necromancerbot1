@@ -28,6 +28,6 @@ Di bawah ini adalah beberapa teknologi dan sistem yang sering saya gunakan dan t
 ### 📊 Statistik GitHub
 
 <p align="left">
-  <img src="https://github-readme-stats.vercel.app/api?username=USERNAME_GITHUB_KAMU&show_icons=true&theme=nord&hide_border=true&bg_color=00000000" alt="Statistik Farel" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=USERNAME_GITHUB_KAMU&layout=compact&theme=nord&hide_border=true&bg_color=00000000" alt="Bahasa Pemrograman" />
+  <img src="https://github-readme-stats.vercel.app/api?username=necromancerbot1&show_icons=true&theme=nord&hide_border=true&bg_color=00000000" alt="Statistik Farel" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=necromancerbot1&layout=compact&theme=nord&hide_border=true&bg_color=00000000" alt="Bahasa Pemrograman" />
 </p>
