@@ -34,7 +34,7 @@
 
   <!-- Nama Utama Menyala -->
   <text x="50%" y="45%" text-anchor="middle" font-family="Arial, sans-serif" font-size="46" font-weight="bold" fill="#FFFFFF" filter="url(#neon-blue)" letter-spacing="4">FAREL</text>
-  <text x="50%" y="45%" text-anchor="middle" font-family="Arial, sans-serif" font-size="46" font-weight="bold" fill="#FFFFFF" letter-spacing="4">FAREL</text>
+  <text x="50%" y="45%" text-anchor="middle" font-family="Arial, sans-serif" font-size="46" font-weight="bold" fill="#FFFFFF" letter-spacing="4">HELLO, I'AM FAREL</text>
 
   <!-- Teks Subtitle -->
   <text x="50%" y="65%" text-anchor="middle" font-family="monospace" font-size="16" fill="#D2A8FF" filter="url(#neon-purple)" letter-spacing="2">CYBER SECURITY | 3D MODELING | WEB DEV</text>
