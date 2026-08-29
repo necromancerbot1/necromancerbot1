@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="300">
+  <defs>
+    <filter id="neon-purple" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur1" />
+      <feMerge><feMergeNode in="blur1" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+    <filter id="neon-blue" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="3" result="blur1" />
+      <feMerge><feMergeNode in="blur1" /><feMergeNode in="SourceGraphic" /></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="#0D1117" rx="15" />
+
+  <!-- Garis Border Arsenal (Ungu) -->
+  <rect x="25" y="25" width="750" height="250" rx="10" fill="none" stroke="#D2A8FF" stroke-width="1.5" filter="url(#neon-purple)" opacity="0.7" />
+  <rect x="25" y="25" width="750" height="250" rx="10" fill="none" stroke="#D2A8FF" stroke-width="1" />
+
+  <!-- Sudut Aksens -->
+  <path d="M 25 60 L 25 25 L 60 25" fill="none" stroke="#D2A8FF" stroke-width="3" filter="url(#neon-purple)" />
+  <path d="M 775 60 L 775 25 L 740 25" fill="none" stroke="#D2A8FF" stroke-width="3" filter="url(#neon-purple)" />
+  <path d="M 25 240 L 25 275 L 60 275" fill="none" stroke="#D2A8FF" stroke-width="3" filter="url(#neon-purple)" />
+  <path d="M 775 240 L 775 275 L 740 275" fill="none" stroke="#D2A8FF" stroke-width="3" filter="url(#neon-purple)" />
+
+  <!-- Judul Utama -->
+  <text x="50%" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF" filter="url(#neon-purple)" letter-spacing="4">SYSTEM ARSENAL</text>
+  <text x="50%" y="65" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF" letter-spacing="4">SYSTEM ARSENAL</text>
+
+  <!-- Kategori 1 (Biru) -->
+  <text x="50%" y="110" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#58A6FF" letter-spacing="2">CORE DEVELOPMENT &amp; WEB</text>
+  
+  <rect x="190" y="130" width="100" height="30" rx="5" fill="none" stroke="#58A6FF" stroke-width="1.5" filter="url(#neon-blue)"/>
+  <text x="240" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">HTML / CSS</text>
+
+  <rect x="305" y="130" width="95" height="30" rx="5" fill="none" stroke="#58A6FF" stroke-width="1.5" filter="url(#neon-blue)"/>
+  <text x="352.5" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">JAVASCRIPT</text>
+
+  <rect x="415" y="130" width="80" height="30" rx="5" fill="none" stroke="#58A6FF" stroke-width="1.5" filter="url(#neon-blue)"/>
+  <text x="455" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">PYTHON</text>
+
+  <rect x="510" y="130" width="80" height="30" rx="5" fill="none" stroke="#58A6FF" stroke-width="1.5" filter="url(#neon-blue)"/>
+  <text x="550" y="150" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">C++</text>
+
+  <!-- Kategori 2 (Ungu) -->
+  <text x="50%" y="200" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#D2A8FF" letter-spacing="2">SECURITY &amp; MULTIMEDIA</text>
+  
+  <rect x="210" y="220" width="120" height="30" rx="5" fill="none" stroke="#D2A8FF" stroke-width="1.5" filter="url(#neon-purple)"/>
+  <text x="270" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">CYBER SECURITY</text>
+
+  <rect x="345" y="220" width="100" height="30" rx="5" fill="none" stroke="#D2A8FF" stroke-width="1.5" filter="url(#neon-purple)"/>
+  <text x="395" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">BLENDER 3D</text>
+
+  <rect x="460" y="220" width="110" height="30" rx="5" fill="none" stroke="#D2A8FF" stroke-width="1.5" filter="url(#neon-purple)"/>
+  <text x="515" y="240" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">PREMIERE PRO</text>
+</svg>
