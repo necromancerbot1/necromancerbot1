@@ -8,7 +8,7 @@
 
 ---
 
-### ✧ Core Projects
+### 💻 Projects
 
 - 🌐 [Web Matriks](https://necromanbot.my.id) — Aplikasi web interaktif untuk logika perhitungan matriks.
 - 🛳️ 3D Model Kapal — Desain *blueprint* arsitektur maritim tingkat lanjut.
