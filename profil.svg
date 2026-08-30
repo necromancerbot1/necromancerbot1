@@ -1,129 +1,262 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="2500">
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="2000">
   <defs>
-    <filter id="neon-blue-soft" x="-100%" y="-100%" width="300%" height="300%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="5" result="blur1" />
-      <feGaussianBlur in="SourceGraphic" stdDeviation="15" result="blur2" />
-      <feGaussianBlur in="SourceGraphic" stdDeviation="25" result="blur3" />
+    <!-- Efek Glow Biru -->
+    <filter id="neon-blue" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur1"/>
+      <feGaussianBlur stdDeviation="8" result="blur2"/>
       <feMerge>
-        <feMergeNode in="blur3" />
-        <feMergeNode in="blur2" />
-        <feMergeNode in="blur1" />
-        <feMergeNode in="SourceGraphic" />
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
-    <filter id="neon-purple-soft" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur in="SourceGraphic" stdDeviation="4" result="blur1" />
+    
+    <!-- Efek Glow Ungu -->
+    <filter id="neon-purple" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur1"/>
+      <feGaussianBlur stdDeviation="8" result="blur2"/>
       <feMerge>
-        <feMergeNode in="blur1" />
-        <feMergeNode in="SourceGraphic" />
+        <feMergeNode in="blur2"/>
+        <feMergeNode in="blur1"/>
+        <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
+
+    <!-- Pola Grid Tech -->
+    <pattern id="tech-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#58A6FF" stroke-width="0.3" opacity="0.15"/>
+      <circle cx="40" cy="40" r="1" fill="#58A6FF" opacity="0.3"/>
+    </pattern>
+
+    <!-- Pola Dots Latar Belakang -->
+    <pattern id="dot-grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#FFFFFF" opacity="0.05"/>
+    </pattern>
+
+    <!-- Gradient Background Utama -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05070A"/>
+      <stop offset="50%" stop-color="#090D14"/>
+      <stop offset="100%" stop-color="#05070A"/>
+    </linearGradient>
   </defs>
 
-  <rect width="100%" height="100%" fill="#0D1117" rx="15" />
+  <!-- BACKGROUND -->
+  <rect width="100%" height="100%" fill="url(#bg-grad)" rx="15"/>
+  <rect width="100%" height="100%" fill="url(#dot-grid)" rx="15"/>
+  
+  <!-- Frame Utama (Cyber Border) -->
+  <rect x="20" y="20" width="860" height="1960" fill="none" stroke="#21262D" stroke-width="1.5" rx="10"/>
+  <!-- Decorative Corners Frame -->
+  <path d="M 20 60 L 20 20 L 60 20" fill="none" stroke="#58A6FF" stroke-width="3" filter="url(#neon-blue)"/>
+  <path d="M 880 60 L 880 20 L 840 20" fill="none" stroke="#58A6FF" stroke-width="3" filter="url(#neon-blue)"/>
+  <path d="M 20 1940 L 20 1980 L 60 1980" fill="none" stroke="#58A6FF" stroke-width="3" filter="url(#neon-blue)"/>
+  <path d="M 880 1940 L 880 1980 L 840 1980" fill="none" stroke="#58A6FF" stroke-width="3" filter="url(#neon-blue)"/>
 
-  <text x="50%" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="46" font-weight="bold" fill="#FFFFFF" filter="url(#neon-blue-soft)" letter-spacing="4">HI, SAYA FAREL</text>
-  <text x="50%" y="100" text-anchor="middle" font-family="Arial, sans-serif" font-size="46" font-weight="bold" fill="#FFFFFF" letter-spacing="4">HI, SAYA FAREL</text>
-  <text x="50%" y="130" text-anchor="middle" font-family="monospace" font-size="16" fill="#D2A8FF" filter="url(#neon-purple-soft)" letter-spacing="2">CYBER SECURITY | 3D MODELING | VIDEO EDITING | WEB DEV</text>
+  <!-- ================= HEADER SECTION ================= -->
+  <!-- Top Bar Decorative -->
+  <rect x="350" y="20" width="200" height="5" fill="#58A6FF" filter="url(#neon-blue)"/>
+  <path d="M 20 80 L 880 80" fill="none" stroke="#58A6FF" stroke-width="1" stroke-dasharray="4, 4" opacity="0.3"/>
 
-  <rect x="25" y="200" width="750" height="2100" rx="15" fill="#010102" stroke="#58A6FF" stroke-width="2" filter="url(#neon-blue-soft)" opacity="0.8" />
-  <rect x="25" y="200" width="750" height="2100" rx="15" fill="#010102" stroke="#58A6FF" stroke-width="1.5" />
+  <text x="50%" y="120" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="52" font-weight="900" fill="#FFFFFF" letter-spacing="6">HI, SAYA FAREL</text>
+  <!-- Cyber Text Shadow/Glow Manual -->
+  <text x="50%" y="120" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="52" font-weight="900" fill="none" stroke="#58A6FF" stroke-width="1.5" opacity="0.8" filter="url(#neon-blue)" letter-spacing="6">HI, SAYA FAREL</text>
+  
+  <!-- Subtitle Badge Style -->
+  <rect x="180" y="145" width="540" height="30" fill="#161B22" stroke="#D2A8FF" stroke-width="1" rx="15"/>
+  <text x="50%" y="165" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="14" font-weight="bold" fill="#D2A8FF" filter="url(#neon-purple)" letter-spacing="2">CYBER SECURITY &lt;/&gt; 3D MODELING &lt;/&gt; WEB DEV</text>
 
-  <path d="M 25 240 L 25 200 L 60 200" fill="none" stroke="#58A6FF" stroke-width="3" filter="url(#neon-blue-soft)" />
-  <path d="M 775 240 L 775 200 L 740 200" fill="none" stroke="#58A6FF" stroke-width="3" filter="url(#neon-blue-soft)" />
-  <path d="M 25 2260 L 25 2300 L 60 2300" fill="none" stroke="#58A6FF" stroke-width="3" filter="url(#neon-blue-soft)" />
-  <path d="M 775 2260 L 775 2300 L 740 2300" fill="none" stroke="#58A6FF" stroke-width="3" filter="url(#neon-blue-soft)" />
+  <!-- ================= ABOUT ME SECTION ================= -->
+  <g transform="translate(40, 240)">
+    <!-- Tech Frame Background -->
+    <rect x="0" y="0" width="820" height="300" fill="#0D1117" stroke="#21262D" stroke-width="1.5" rx="8"/>
+    <rect x="0" y="0" width="820" height="300" fill="url(#tech-grid)" rx="8"/>
+    
+    <!-- Cyber Decorative elements on Frame -->
+    <rect x="-1" y="20" width="3" height="40" fill="#58A6FF" filter="url(#neon-blue)"/>
+    <rect x="818" y="240" width="3" height="40" fill="#D2A8FF" filter="url(#neon-purple)"/>
+    
+    <!-- Title -->
+    <text x="40" y="50" font-family="'Courier New', Courier, monospace" font-size="24" font-weight="bold" fill="#58A6FF" filter="url(#neon-blue)">>_ IDENTITAS_SISTEM</text>
+    <path d="M 40 65 L 780 65" fill="none" stroke="#21262D" stroke-width="1"/>
 
-  <text x="50%" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#FFFFFF" filter="url(#neon-blue-soft)" letter-spacing="2">necromancerbot1</text>
-  <text x="50%" y="270" text-anchor="middle" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#FFFFFF" letter-spacing="2">necromancerbot1</text>
-  <text x="50%" y="300" text-anchor="middle" font-family="monospace" font-size="14" fill="#8B949E">Medan, Indonesia | He/Him</text>
+    <!-- Avatar Hexagon / Cyber Shape -->
+    <path d="M 100 90 L 150 90 L 175 133 L 150 176 L 100 176 L 75 133 Z" fill="#161B22" stroke="#D2A8FF" stroke-width="2" filter="url(#neon-purple)"/>
+    <text x="125" y="140" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="28" font-weight="bold" fill="#FFFFFF">F</text>
+    
+    <!-- Status Indicators -->
+    <circle cx="210" cy="100" r="4" fill="#3FB950" filter="url(#neon-blue)"/>
+    <text x="225" y="105" font-family="monospace" font-size="12" fill="#3FB950">STATUS: ONLINE / READY</text>
+    
+    <text x="210" y="130" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF">necromancerbot1</text>
+    <text x="210" y="155" font-family="monospace" font-size="14" fill="#8B949E">[LOCATION: Medan, ID] :: [ROLE: Developer]</text>
 
-  <circle cx="100" cy="400" r="70" fill="none" stroke="#D2A8FF" stroke-width="3" filter="url(#neon-purple-soft)"/>
-  <circle cx="100" cy="400" r="65" fill="#D2A8FF"/>
-  <text x="100" y="410" text-anchor="middle" font-family="Arial, sans-serif" font-size="24" fill="#010102">FAREL</text>
+    <!-- Bio Text -->
+    <text x="40" y="220" font-family="monospace" font-size="14" fill="#E6EDF3">- 🎓 Mahasiswa Ilmu Komputer, Universitas Negeri Medan.</text>
+    <text x="40" y="245" font-family="monospace" font-size="14" fill="#E6EDF3">- 🛡️ Fokus Riset: <tspan fill="#D2A8FF">Cybersecurity, Naval Defense, Blueprint Logic.</tspan></text>
+    <text x="40" y="270" font-family="monospace" font-size="14" fill="#E6EDF3">- 💻 Berfokus pada pengembangan perangkat lunak tingkat lanjut &amp; Web Interaktif.</text>
+  </g>
 
-  <text x="100" y="520" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF" filter="url(#neon-blue-soft)">Sedikit Tentang Saya</text>
-  <text x="100" y="520" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF">Sedikit Tentang Saya</text>
-  <text x="120" y="560" font-family="monospace" font-size="14" fill="#8B949E">- S1 Ilmu Komputer, Universitas Negeri Medan (UNIMED).</text>
-  <text x="120" y="590" font-family="monospace" font-size="14" fill="#8B949E">- Minat: Cybersecurity (Naval Defense, blueprint design).</text>
-  <text x="120" y="620" font-family="monospace" font-size="14" fill="#8B949E">- Skill: Pemrograman lanjut (C++, Python, DLL), Web Interaktif.</text>
-  <text x="120" y="650" font-family="monospace" font-size="14" fill="#8B949E">- Hobi: Berenang, Game Simulasi Kota.</text>
-  <text x="120" y="680" font-family="monospace" font-size="14" fill="#8B949E">- Portofolio: necromanbot.my.id (Statis)</text>
+  <!-- ================= ARSENAL SECTION ================= -->
+  <g transform="translate(40, 580)">
+    <!-- Title -->
+    <text x="410" y="40" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="26" font-weight="bold" fill="#D2A8FF" filter="url(#neon-purple)">[ SYSTEM_ARSENAL ]</text>
+    <!-- Dekorasi Kiri Kanan Judul -->
+    <path d="M 150 32 L 250 32 M 240 27 L 250 32 L 240 37" fill="none" stroke="#58A6FF" stroke-width="1.5" opacity="0.5"/>
+    <path d="M 670 32 L 570 32 M 580 27 L 570 32 L 580 37" fill="none" stroke="#58A6FF" stroke-width="1.5" opacity="0.5"/>
 
-  <text x="400" y="780" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF" filter="url(#neon-purple-soft)">SYSTEM ARSENAL</text>
-  <text x="400" y="780" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF">SYSTEM ARSENAL</text>
+    <!-- Kategori 1: Engineering -->
+    <text x="410" y="90" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#8B949E" letter-spacing="2">>> CORE_ENGINEERING</text>
+    
+    <!-- Skill Badges - Cyber Style -->
+    <g transform="translate(130, 110)">
+      <rect x="0" y="0" width="100" height="35" rx="4" fill="#0D1117" stroke="#58A6FF" stroke-width="1.5" filter="url(#neon-blue)"/>
+      <text x="50" y="22" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="14" font-weight="bold" fill="#FFFFFF">C++</text>
+      
+      <rect x="120" y="0" width="100" height="35" rx="4" fill="#0D1117" stroke="#58A6FF" stroke-width="1.5" filter="url(#neon-blue)"/>
+      <text x="170" y="22" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="14" font-weight="bold" fill="#FFFFFF">PYTHON</text>
 
-  <text x="400" y="820" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#58A6FF" letter-spacing="2">CORE ENGINEERING</text>
-  <rect x="190" y="840" width="100" height="30" rx="5" fill="none" stroke="#58A6FF" stroke-width="1.5" filter="url(#neon-blue-soft)"/>
-  <text x="240" y="860" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">C++</text>
-  <rect x="305" y="840" width="95" height="30" rx="5" fill="none" stroke="#58A6FF" stroke-width="1.5" filter="url(#neon-blue-soft)"/>
-  <text x="352.5" y="860" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">PYTHON</text>
-  <rect x="415" y="840" width="80" height="30" rx="5" fill="none" stroke="#58A6FF" stroke-width="1.5" filter="url(#neon-blue-soft)"/>
-  <text x="455" y="860" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">SQL</text>
-  <rect x="510" y="840" width="80" height="30" rx="5" fill="none" stroke="#58A6FF" stroke-width="1.5" filter="url(#neon-blue-soft)"/>
-  <text x="550" y="860" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">LINUX</text>
-  <rect x="605" y="840" width="80" height="30" rx="5" fill="none" stroke="#58A6FF" stroke-width="1.5" filter="url(#neon-blue-soft)"/>
-  <text x="645" y="860" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">GIT</text>
+      <rect x="240" y="0" width="100" height="35" rx="4" fill="#0D1117" stroke="#58A6FF" stroke-width="1.5" filter="url(#neon-blue)"/>
+      <text x="290" y="22" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="14" font-weight="bold" fill="#FFFFFF">SQL</text>
+      
+      <rect x="360" y="0" width="100" height="35" rx="4" fill="#0D1117" stroke="#58A6FF" stroke-width="1.5" filter="url(#neon-blue)"/>
+      <text x="410" y="22" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="14" font-weight="bold" fill="#FFFFFF">LINUX</text>
+      
+      <rect x="480" y="0" width="100" height="35" rx="4" fill="#0D1117" stroke="#58A6FF" stroke-width="1.5" filter="url(#neon-blue)"/>
+      <text x="530" y="22" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="14" font-weight="bold" fill="#FFFFFF">JS / TS</text>
+    </g>
 
-  <text x="400" y="910" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#D2A8FF" letter-spacing="2">SECURITY &amp; ARCHITECTURE</text>
-  <rect x="210" y="930" width="120" height="30" rx="5" fill="none" stroke="#D2A8FF" stroke-width="1.5" filter="url(#neon-purple-soft)"/>
-  <text x="270" y="950" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">CYBER SECURITY</text>
-  <rect x="345" y="930" width="100" height="30" rx="5" fill="none" stroke="#D2A8FF" stroke-width="1.5" filter="url(#neon-purple-soft)"/>
-  <text x="395" y="950" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">NAVAL DEFENSE</text>
-  <rect x="460" y="930" width="110" height="30" rx="5" fill="none" stroke="#D2A8FF" stroke-width="1.5" filter="url(#neon-purple-soft)"/>
-  <text x="515" y="950" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">BLUEPRINT DESIGN</text>
+    <!-- Kategori 2: Security & 3D -->
+    <text x="410" y="190" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#8B949E" letter-spacing="2">>> MULTIMEDIA &amp; SECURITY</text>
+    
+    <g transform="translate(100, 210)">
+      <rect x="0" y="0" width="140" height="35" rx="4" fill="#0D1117" stroke="#D2A8FF" stroke-width="1.5" filter="url(#neon-purple)"/>
+      <text x="70" y="22" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="13" font-weight="bold" fill="#FFFFFF">CYBER SECURITY</text>
 
-  <text x="400" y="1000" text-anchor="middle" font-family="monospace" font-size="14" font-weight="bold" fill="#D2A8FF" letter-spacing="2">BLENDER &amp; PREMIERE</text>
-  <rect x="305" y="1020" width="95" height="30" rx="5" fill="none" stroke="#D2A8FF" stroke-width="1.5" filter="url(#neon-purple-soft)"/>
-  <text x="352.5" y="1040" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">BLENDER</text>
-  <rect x="415" y="1020" width="80" height="30" rx="5" fill="none" stroke="#D2A8FF" stroke-width="1.5" filter="url(#neon-purple-soft)"/>
-  <text x="455" y="1040" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">PREMIERE</text>
+      <rect x="160" y="0" width="140" height="35" rx="4" fill="#0D1117" stroke="#D2A8FF" stroke-width="1.5" filter="url(#neon-purple)"/>
+      <text x="230" y="22" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="13" font-weight="bold" fill="#FFFFFF">NAVAL DEFENSE</text>
 
-  <text x="100" y="1120" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF" filter="url(#neon-blue-soft)">CORE PROJECTS</text>
-  <text x="100" y="1120" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF">CORE PROJECTS</text>
+      <rect x="320" y="0" width="140" height="35" rx="4" fill="#0D1117" stroke="#D2A8FF" stroke-width="1.5" filter="url(#neon-purple)"/>
+      <text x="390" y="22" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="13" font-weight="bold" fill="#FFFFFF">BLENDER 3D</text>
 
-  <rect x="100" y="1160" width="200" height="150" rx="10" fill="#161B22" stroke="#58A6FF" stroke-width="1" filter="url(#neon-blue-soft)" opacity="0.6"/>
-  <text x="110" y="1190" font-family="monospace" font-size="14" font-weight="bold" fill="#FFFFFF">Web Matriks</text>
-  <text x="110" y="1220" font-family="monospace" font-size="12" fill="#8B949E">Web Interaktif</text>
-  <text x="110" y="1250" font-family="monospace" font-size="12" fill="#8B949E">Logika Perhitungan</text>
+      <rect x="480" y="0" width="140" height="35" rx="4" fill="#0D1117" stroke="#D2A8FF" stroke-width="1.5" filter="url(#neon-purple)"/>
+      <text x="550" y="22" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="13" font-weight="bold" fill="#FFFFFF">PREMIERE PRO</text>
+    </g>
+  </g>
 
-  <rect x="310" y="1160" width="200" height="150" rx="10" fill="#161B22" stroke="#D2A8FF" stroke-width="1" filter="url(#neon-purple-soft)" opacity="0.6"/>
-  <text x="320" y="1190" font-family="monospace" font-size="14" font-weight="bold" fill="#FFFFFF">3D Modeling Kapal</text>
-  <text x="320" y="1220" font-family="monospace" font-size="12" fill="#8B949E">Rendering Maritim</text>
-  <text x="320" y="1250" font-family="monospace" font-size="12" fill="#8B949E">Arsitektur Kapal</text>
+  <!-- ================= PROJECTS SECTION ================= -->
+  <g transform="translate(40, 920)">
+    <text x="410" y="40" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="26" font-weight="bold" fill="#58A6FF" filter="url(#neon-blue)">[ CORE_PROJECTS ]</text>
+    
+    <!-- Proyek 1: Web -->
+    <g transform="translate(20, 80)">
+      <!-- Kotak Proyek dengan aksen tech -->
+      <path d="M 10 0 L 250 0 L 250 180 L 0 180 L 0 10 Z" fill="#0D1117" stroke="#58A6FF" stroke-width="1.2" opacity="0.8"/>
+      <!-- Sudut Neon -->
+      <path d="M 0 30 L 0 0 L 30 0" fill="none" stroke="#58A6FF" stroke-width="3" filter="url(#neon-blue)"/>
+      
+      <text x="20" y="40" font-family="'Courier New', Courier, monospace" font-size="18" font-weight="bold" fill="#FFFFFF">WEB MATRIKS</text>
+      <path d="M 20 50 L 100 50" fill="none" stroke="#58A6FF" stroke-width="2"/>
+      
+      <text x="20" y="80" font-family="monospace" font-size="12" fill="#8B949E">App interaktif untuk</text>
+      <text x="20" y="100" font-family="monospace" font-size="12" fill="#8B949E">memecahkan logika</text>
+      <text x="20" y="120" font-family="monospace" font-size="12" fill="#8B949E">perhitungan matriks.</text>
+      
+      <rect x="20" y="145" width="80" height="20" rx="3" fill="#161B22" stroke="#8B949E" stroke-width="1"/>
+      <text x="60" y="159" text-anchor="middle" font-family="monospace" font-size="10" fill="#E6EDF3">UI/UX &lt;/&gt;</text>
+    </g>
 
-  <rect x="520" y="1160" width="200" height="150" rx="10" fill="#161B22" stroke="#58A6FF" stroke-width="1" filter="url(#neon-blue-soft)" opacity="0.6"/>
-  <text x="530" y="1190" font-family="monospace" font-size="14" font-weight="bold" fill="#FFFFFF">Editing Video</text>
-  <text x="530" y="1220" font-family="monospace" font-size="12" fill="#8B949E">Produksi Multimedia</text>
-  <text x="530" y="1250" font-family="monospace" font-size="12" fill="#8B949E">Rendering Video</text>
+    <!-- Proyek 2: 3D (Ungu) -->
+    <g transform="translate(290, 80)">
+      <path d="M 10 0 L 250 0 L 250 180 L 0 180 L 0 10 Z" fill="#0D1117" stroke="#D2A8FF" stroke-width="1.2" opacity="0.8"/>
+      <path d="M 0 30 L 0 0 L 30 0" fill="none" stroke="#D2A8FF" stroke-width="3" filter="url(#neon-purple)"/>
+      
+      <text x="20" y="40" font-family="'Courier New', Courier, monospace" font-size="18" font-weight="bold" fill="#FFFFFF">3D KAPAL</text>
+      <path d="M 20 50 L 100 50" fill="none" stroke="#D2A8FF" stroke-width="2"/>
+      
+      <text x="20" y="80" font-family="monospace" font-size="12" fill="#8B949E">Desain Blueprint &amp;</text>
+      <text x="20" y="100" font-family="monospace" font-size="12" fill="#8B949E">pemodelan struktural</text>
+      <text x="20" y="120" font-family="monospace" font-size="12" fill="#8B949E">arsitektur maritim.</text>
+      
+      <rect x="20" y="145" width="80" height="20" rx="3" fill="#161B22" stroke="#8B949E" stroke-width="1"/>
+      <text x="60" y="159" text-anchor="middle" font-family="monospace" font-size="10" fill="#E6EDF3">RENDER</text>
+    </g>
 
-  <text x="400" y="1450" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF" filter="url(#neon-blue-soft)">GITHUB STATS</text>
-  <text x="400" y="1450" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF">GITHUB STATS</text>
+    <!-- Proyek 3: Video -->
+    <g transform="translate(560, 80)">
+      <path d="M 10 0 L 250 0 L 250 180 L 0 180 L 0 10 Z" fill="#0D1117" stroke="#58A6FF" stroke-width="1.2" opacity="0.8"/>
+      <path d="M 0 30 L 0 0 L 30 0" fill="none" stroke="#58A6FF" stroke-width="3" filter="url(#neon-blue)"/>
+      
+      <text x="20" y="40" font-family="'Courier New', Courier, monospace" font-size="18" font-weight="bold" fill="#FFFFFF">VIDEO EDITING</text>
+      <path d="M 20 50 L 100 50" fill="none" stroke="#58A6FF" stroke-width="2"/>
+      
+      <text x="20" y="80" font-family="monospace" font-size="12" fill="#8B949E">Proses penyusunan,</text>
+      <text x="20" y="100" font-family="monospace" font-size="12" fill="#8B949E">color grading, dan</text>
+      <text x="20" y="120" font-family="monospace" font-size="12" fill="#8B949E">rendering multimedia.</text>
+      
+      <rect x="20" y="145" width="80" height="20" rx="3" fill="#161B22" stroke="#8B949E" stroke-width="1"/>
+      <text x="60" y="159" text-anchor="middle" font-family="monospace" font-size="10" fill="#E6EDF3">MEDIA</text>
+    </g>
+  </g>
 
-  <rect x="100" y="1490" width="300" height="180" rx="10" fill="#161B22" stroke="#58A6FF" stroke-width="1" filter="url(#neon-blue-soft)" opacity="0.6"/>
-  <text x="110" y="1520" font-family="monospace" font-size="14" font-weight="bold" fill="#FFFFFF">Contributions: 1,234</text>
-  <text x="110" y="1550" font-family="monospace" font-size="14" font-weight="bold" fill="#FFFFFF">Commits: 567</text>
-  <text x="110" y="1580" font-family="monospace" font-size="14" font-weight="bold" fill="#FFFFFF">Stars: 89</text>
-  <text x="110" y="1610" font-family="monospace" font-size="14" font-weight="bold" fill="#FFFFFF">Followers: 102</text>
+  <!-- ================= GITHUB STATS (STATIC UI) ================= -->
+  <g transform="translate(40, 1260)">
+    <text x="410" y="40" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="26" font-weight="bold" fill="#D2A8FF" filter="url(#neon-purple)">[ SYSTEM_METRICS ]</text>
+    
+    <!-- UI Kotak Statistik -->
+    <g transform="translate(80, 80)">
+      <rect x="0" y="0" width="310" height="180" fill="#0D1117" stroke="#21262D" stroke-width="1.5" rx="8"/>
+      <!-- Decorative UI Line -->
+      <path d="M 0 30 L 310 30" fill="none" stroke="#21262D" stroke-width="1"/>
+      <text x="15" y="20" font-family="monospace" font-size="12" font-weight="bold" fill="#58A6FF">DATA_KONTRIBUSI</text>
+      
+      <!-- List Stats -->
+      <text x="20" y="60" font-family="monospace" font-size="14" fill="#8B949E">Contributions:</text>
+      <text x="280" y="60" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="16" font-weight="bold" fill="#FFFFFF">1,024</text>
+      
+      <text x="20" y="95" font-family="monospace" font-size="14" fill="#8B949E">Total Commits:</text>
+      <text x="280" y="95" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="16" font-weight="bold" fill="#FFFFFF">405</text>
+      
+      <text x="20" y="130" font-family="monospace" font-size="14" fill="#8B949E">Repositories :</text>
+      <text x="280" y="130" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="16" font-weight="bold" fill="#FFFFFF">12</text>
+    </g>
 
-  <rect x="410" y="1490" width="300" height="180" rx="10" fill="#161B22" stroke="#D2A8FF" stroke-width="1" filter="url(#neon-purple-soft)" opacity="0.6"/>
-  <text x="420" y="1520" font-family="monospace" font-size="14" font-weight="bold" fill="#FFFFFF">Top Languages</text>
-  <rect x="420" y="1540" width="100" height="20" fill="#58A6FF"/>
-  <text x="530" y="1555" font-family="monospace" font-size="12" fill="#FFFFFF">C++</text>
-  <rect x="420" y="1570" width="80" height="20" fill="#D2A8FF"/>
-  <text x="510" y="1585" font-family="monospace" font-size="12" fill="#FFFFFF">Python</text>
-  <rect x="420" y="1600" width="60" height="20" fill="#58A6FF"/>
-  <text x="490" y="1615" font-family="monospace" font-size="12" fill="#FFFFFF">Web</text>
+    <g transform="translate(430, 80)">
+      <rect x="0" y="0" width="310" height="180" fill="#0D1117" stroke="#21262D" stroke-width="1.5" rx="8"/>
+      <path d="M 0 30 L 310 30" fill="none" stroke="#21262D" stroke-width="1"/>
+      <text x="15" y="20" font-family="monospace" font-size="12" font-weight="bold" fill="#D2A8FF">BAHASA_TERATAS</text>
 
-  <text x="400" y="1750" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF" filter="url(#neon-blue-soft)">Terhubung Dengan Saya</text>
-  <text x="400" y="1750" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF">Terhubung Dengan Saya</text>
+      <!-- Bar Chart Languange -->
+      <text x="20" y="60" font-family="monospace" font-size="12" fill="#E6EDF3">C++</text>
+      <rect x="80" y="50" width="180" height="12" fill="#58A6FF" filter="url(#neon-blue)"/>
+      <text x="270" y="60" font-family="monospace" font-size="10" fill="#8B949E">55%</text>
 
-  <p align="center">
-    <rect x="250" y="1790" width="100" height="30" rx="5" fill="none" stroke="#58A6FF" stroke-width="1.5" filter="url(#neon-blue-soft)"/>
-    <text x="300" y="1810" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">Email (Statis)</text>
-    <rect x="365" y="1790" width="120" height="30" rx="5" fill="none" stroke="#D2A8FF" stroke-width="1.5" filter="url(#neon-purple-soft)"/>
-    <text x="425" y="1810" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">LinkedIn (Statis)</text>
-    <rect x="500" y="1790" width="130" height="30" rx="5" fill="none" stroke="#58A6FF" stroke-width="1.5" filter="url(#neon-blue-soft)"/>
-    <text x="565" y="1810" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#FFFFFF">necromanbot.my.id (Statis)</text>
-  </p>
+      <text x="20" y="95" font-family="monospace" font-size="12" fill="#E6EDF3">Python</text>
+      <rect x="80" y="85" width="120" height="12" fill="#D2A8FF" filter="url(#neon-purple)"/>
+      <text x="210" y="95" font-family="monospace" font-size="10" fill="#8B949E">35%</text>
+
+      <text x="20" y="130" font-family="monospace" font-size="12" fill="#E6EDF3">Web (JS)</text>
+      <rect x="80" y="120" width="50" height="12" fill="#3FB950"/>
+      <text x="140" y="130" font-family="monospace" font-size="10" fill="#8B949E">10%</text>
+    </g>
+  </g>
+
+  <!-- ================= FOOTER / CONNECTION ================= -->
+  <g transform="translate(40, 1620)">
+    <text x="410" y="40" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="26" font-weight="bold" fill="#58A6FF" filter="url(#neon-blue)">[ LINK_KONEKSI ]</text>
+    
+    <g transform="translate(140, 80)">
+      <!-- Tombol Kontak Bergaya Terminal -->
+      <rect x="0" y="0" width="160" height="45" fill="#0D1117" stroke="#58A6FF" stroke-width="1.5" rx="5" filter="url(#neon-blue)"/>
+      <text x="80" y="27" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="14" font-weight="bold" fill="#FFFFFF">E-MAIL</text>
+      
+      <rect x="190" y="0" width="160" height="45" fill="#0D1117" stroke="#D2A8FF" stroke-width="1.5" rx="5" filter="url(#neon-purple)"/>
+      <text x="270" y="27" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="14" font-weight="bold" fill="#FFFFFF">LINKEDIN</text>
+      
+      <rect x="380" y="0" width="160" height="45" fill="#0D1117" stroke="#58A6FF" stroke-width="1.5" rx="5" filter="url(#neon-blue)"/>
+      <text x="460" y="27" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="14" font-weight="bold" fill="#FFFFFF">WEB PORTOFOLIO</text>
+    </g>
+
+    <text x="410" y="180" text-anchor="middle" font-family="monospace" font-size="12" fill="#8B949E">>> SYSTEM OPERATION NORMAL. END OF FILE. &lt;&lt;</text>
+  </g>
 </svg>
