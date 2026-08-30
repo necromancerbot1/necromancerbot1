@@ -10,7 +10,7 @@
 
 ### 💻 Projects
 
-- 🌐 [Web Matriks](https://necromanbot.my.id) — Aplikasi web interaktif untuk logika perhitungan matriks.
+- 🌐 [Web Matriks](https://necromancerbot1.github.io/matriks/) — Aplikasi web interaktif untuk logika perhitungan matriks.
 - 🛳️ 3D Model Kapal — Desain *blueprint* arsitektur maritim tingkat lanjut.
 - 🎬 Video Editing — Produksi multimedia, *rendering*, dan *color grading*.
 
