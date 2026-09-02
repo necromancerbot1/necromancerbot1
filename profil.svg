@@ -77,7 +77,7 @@
     <rect x="818" y="240" width="3" height="40" fill="#D2A8FF" filter="url(#neon-purple)"/>
     
     <!-- Title -->
-    <text x="40" y="50" font-family="'Courier New', Courier, monospace" font-size="24" font-weight="bold" fill="#58A6FF" filter="url(#neon-blue)">IDENTITAS SISTEM</text>
+    <text x="40" y="50" font-family="'Courier New', Courier, monospace" font-size="24" font-weight="bold" fill="#58A6FF" filter="url(#neon-blue)"> IDENTITAS </text>
     <path d="M 40 65 L 780 65" fill="none" stroke="#21262D" stroke-width="1"/>
 
     <!-- Avatar Hexagon / Cyber Shape -->
@@ -100,7 +100,7 @@
   <!-- ================= ARSENAL SECTION ================= -->
   <g transform="translate(40, 580)">
     <!-- Title -->
-    <text x="410" y="40" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="26" font-weight="bold" fill="#D2A8FF" filter="url(#neon-purple)">[ SYSTEM ARSENAL ]</text>
+    <text x="410" y="40" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="26" font-weight="bold" fill="#D2A8FF" filter="url(#neon-purple)">[ SKILL ]</text>
     <!-- Dekorasi Kiri Kanan Judul -->
     <path d="M 150 32 L 250 32 M 240 27 L 250 32 L 240 37" fill="none" stroke="#58A6FF" stroke-width="1.5" opacity="0.5"/>
     <path d="M 670 32 L 570 32 M 580 27 L 570 32 L 580 37" fill="none" stroke="#58A6FF" stroke-width="1.5" opacity="0.5"/>
@@ -146,7 +146,7 @@
 
   <!-- ================= PROJECTS SECTION ================= -->
   <g transform="translate(40, 920)">
-    <text x="410" y="40" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="26" font-weight="bold" fill="#58A6FF" filter="url(#neon-blue)">[ CORE PROJECTS ]</text>
+    <text x="410" y="40" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="26" font-weight="bold" fill="#58A6FF" filter="url(#neon-blue)">[ PROJECTS ]</text>
     
     <!-- Proyek 1: Web -->
     <g transform="translate(20, 80)">
@@ -201,7 +201,7 @@
 
   <!-- ================= GITHUB STATS (STATIC UI) ================= -->
   <g transform="translate(40, 1260)">
-    <text x="410" y="40" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="26" font-weight="bold" fill="#D2A8FF" filter="url(#neon-purple)">[ SYSTEM METRICS ]</text>
+    <text x="410" y="40" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="26" font-weight="bold" fill="#D2A8FF" filter="url(#neon-purple)">[ STATISTIK ]</text>
     
     <!-- UI Kotak Statistik -->
     <g transform="translate(80, 80)">
@@ -212,13 +212,13 @@
       
       <!-- List Stats -->
       <text x="20" y="60" font-family="monospace" font-size="14" fill="#8B949E">Contributions:</text>
-      <text x="280" y="60" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="16" font-weight="bold" fill="#FFFFFF">1,024</text>
+      <text x="280" y="60" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="16" font-weight="bold" fill="#FFFFFF">156</text>
       
       <text x="20" y="95" font-family="monospace" font-size="14" fill="#8B949E">Total Commits:</text>
-      <text x="280" y="95" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="16" font-weight="bold" fill="#FFFFFF">405</text>
+      <text x="280" y="95" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="16" font-weight="bold" fill="#FFFFFF">133</text>
       
       <text x="20" y="130" font-family="monospace" font-size="14" fill="#8B949E">Repositories :</text>
-      <text x="280" y="130" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="16" font-weight="bold" fill="#FFFFFF">12</text>
+      <text x="280" y="130" text-anchor="end" font-family="'Courier New', Courier, monospace" font-size="16" font-weight="bold" fill="#FFFFFF">5</text>
     </g>
 
     <g transform="translate(430, 80)">
@@ -227,11 +227,11 @@
       <text x="15" y="20" font-family="monospace" font-size="12" font-weight="bold" fill="#D2A8FF">BAHASA TERATAS</text>
 
       <!-- Bar Chart Languange -->
-      <text x="20" y="60" font-family="monospace" font-size="12" fill="#E6EDF3">C++</text>
+      <text x="20" y="60" font-family="monospace" font-size="12" fill="#E6EDF3">HTML</text>
       <rect x="80" y="50" width="180" height="12" fill="#58A6FF" filter="url(#neon-blue)"/>
       <text x="270" y="60" font-family="monospace" font-size="10" fill="#8B949E">55%</text>
 
-      <text x="20" y="95" font-family="monospace" font-size="12" fill="#E6EDF3">Python</text>
+      <text x="20" y="95" font-family="monospace" font-size="12" fill="#E6EDF3">CSS</text>
       <rect x="80" y="85" width="120" height="12" fill="#D2A8FF" filter="url(#neon-purple)"/>
       <text x="210" y="95" font-family="monospace" font-size="10" fill="#8B949E">35%</text>
 
@@ -243,7 +243,7 @@
 
   <!-- ================= FOOTER / CONNECTION ================= -->
   <g transform="translate(40, 1620)">
-    <text x="410" y="40" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="26" font-weight="bold" fill="#58A6FF" filter="url(#neon-blue)">[ LINK KONEKSI ]</text>
+    <text x="410" y="40" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-size="26" font-weight="bold" fill="#58A6FF" filter="url(#neon-blue)">[ SOSIAL MEDIA ]</text>
     
     <g transform="translate(140, 80)">
       <!-- Tombol Kontak Bergaya Terminal -->
